@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="icon" href="./Alarm-PNG.png">
+    <link rel="stylesheet" href="./App.css">
+    <link rel="stylesheet" href="./Responsive.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <main>
+        <header>
+            <div class="AppNameLogo">
+                <img src="./Alarm-PNG.png" alt="Alarm-Logo">
+                <h1>Alarm<span>Clock</span></h1>
+            </div>
+        </header>
+
+        <div class="ClockContainer">
+            <div class="Clock">
+                <div class="Title">
+                    <img src="./AlarmGIf.gif" alt="Alram-Gif">
+                    <h3>Set Your Alarm</h3>
+                    <img src="./AlarmGIf.gif" alt="Alram-Gif">
+                </div>
+                <div class="AlarmBox">
+                    <div class="CurrentTimeBox">
+                        Current Time - 
+                       <h3 class="CurrentTime"> 00:00:00 AM/PM</h3>
+                    </div>
+                    <div class="Content">
+                     <div class="SelectionBox">
+                            <select>
+                                <option value="Hour" selected hidden>Hour</option>
+                            </select>
+                          
+                            <select>
+                                <option value="Minute" selected hidden>Minute</option>
+                            </select>
+                          
+                            <select>
+                                <option value="AM/PM" selected hidden>AM/PM</option>
+                            </select>
+
+                        </div>
+                        <button id="SetAlarmButton">Set Alarm</button>
+                        <button id="StopAlarmButton">Stop Alarm</button>
+                     </div>
+
+                    </div>
+
+                    <div id="MsgDisplay">
+                      <div class="Title">  
+                        <h3 id="MsgTitle"> Msg Show Here</h3>
+                        <i class="fa-solid fa-xmark" id="Closebtn" title="Close"></i>
+                    </div>
+                        <p id="Msg">DisCription Of message</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./App.js"></script>
+</html>
